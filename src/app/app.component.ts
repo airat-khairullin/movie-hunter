@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AngularFirestore, DocumentChangeAction} from "@angular/fire/compat/firestore";
+import {AngularFirestore, DocumentChangeAction} from '@angular/fire/compat/firestore';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     this.fireStore.collection('test').snapshotChanges().subscribe((items: DocumentChangeAction<any>[]) => {
       items.map((item: DocumentChangeAction<any>) => {
         console.log(item.payload.doc.data());
-      })
-    })
+      });
+    });
   }
 }

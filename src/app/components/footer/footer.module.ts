@@ -1,13 +1,21 @@
 import {NgModule} from '@angular/core';
-import {FooterComponent} from './footer.component';
 import {CommonModule} from '@angular/common';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+import {FooterComponent} from './footer.component';
+
 
 @NgModule({
-    declarations: [FooterComponent],
-    exports: [FooterComponent],
-    imports: [
-        CommonModule,
-    ]
+  declarations: [
+    FooterComponent
+  ],
+  exports: [
+    FooterComponent
+  ],
+  imports: [
+    CommonModule,
+    MatToolbarModule
+  ]
 })
 export class FooterModule {
 }

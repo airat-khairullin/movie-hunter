@@ -1,5 +1,21 @@
 <mat-toolbar>
-  <div class="container">
-    <span>Movie hunter</span>
+  <div class="container d-flex justify-content-between">
+    <a class="logo" routerLink="/">Movie hunter</a>
+
+    <nav class="d-flex align-items-center">
+      <ul class="nav align-items-center">
+        <li class="nav-item">
+          <a routerLink="watch-list" class="nav-link">
+            Буду смотреть
+          </a>
+        </li>
+        <li class="nav-item">
+          <a (click)="toggleNavigation.emit()" class="nav-link d-flex">
+            <mat-icon>account_circle</mat-icon>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
   </div>
 </mat-toolbar>

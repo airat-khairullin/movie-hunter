@@ -7,6 +7,10 @@ export const appRoutes: Routes = [
     loadChildren: () => import('./layouts/main-layout').then((m) => m.MainLayoutModule)
   },
   {
+    path: 'profile',
+    loadChildren: () => import('./layouts/profile-layout').then((m) => m.ProfileLayoutModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/page-not-found').then(m => m.PageNotFoundModule)
   }

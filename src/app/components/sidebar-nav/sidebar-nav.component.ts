@@ -1,11 +1,11 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'app-sidebar-nav',
+  templateUrl: './sidebar-nav.component.html',
+  styleUrls: ['./sidebar-nav.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class SidebarNavComponent implements OnInit {
   @Output() public toggleNavigation: EventEmitter<void> = new EventEmitter<void>();
 
   constructor() { }

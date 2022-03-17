@@ -2,23 +2,21 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
-import {MainLayoutRoutingModule} from './main-layout-routing.module';
+import {ProfileLayoutRoutingModule} from './profile-layout-routing.module';
 import {HeaderModule} from '../../components/header';
 import {FooterModule} from '../../components/footer';
 
-import {MainLayoutComponent} from './main-layout.component';
-import {SidebarNavModule} from "@app/components/sidebar-nav";
+import {ProfileLayoutComponent} from './profile-layout.component';
 
 @NgModule({
-  declarations: [MainLayoutComponent],
+  declarations: [ProfileLayoutComponent],
   imports: [
     CommonModule,
-    MainLayoutRoutingModule,
+    ProfileLayoutRoutingModule,
     HeaderModule,
     FooterModule,
-    MatSidenavModule,
-    SidebarNavModule
+    MatSidenavModule
   ]
 })
-export class MainLayoutModule {
+export class ProfileLayoutModule {
 }

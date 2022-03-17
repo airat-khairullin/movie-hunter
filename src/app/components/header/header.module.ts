@@ -3,6 +3,9 @@ import {CommonModule} from '@angular/common';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 import {HeaderComponent} from './header.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {RouterModule} from "@angular/router";
 
 
 @NgModule({
@@ -14,7 +17,9 @@ import {HeaderComponent} from './header.component';
   ],
   imports: [
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    RouterModule
   ]
 })
 export class HeaderModule {
